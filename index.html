@@ -1,212 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <title>Meeting 1 Spring 25 - Week 1</title>
-    <meta name="author" content="Aarav Vidhawan">
-    <meta name="description" content="Meeting Minutes of the MacroPad meeting 1, spring quarter">
-    <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/32/list.png">
-  </head>
+<head>
+  <title>Meeting 1 Spring 25 - Week 1</title>
+  <meta name="author" content="Aarav Vidhawan">
+  <meta name="description" content="Meeting Minutes of the MacroPad meeting 1, spring quarter">
+  <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/32/list.png">
+</head>
 
-  <body>
+<body>
+  <header>
+    <h1>MacroPad Project Team Meeting</h1>
+    <h3>Spring Check-in and Project Scheduling</h3>
+    <p>Date: April 5, 2025</p>
+  </header>
 
-    <header>
-        <h1>MacroPad Project Team Meeting</h1>
-        <h3>Spring Check-in and Project Scheduling</h3>
-        <p>Date: April 5, 2025</p>
-    </header>
+  <nav>
+    <ol>
+      <li><a href="#attendance">Attendance</a></li>
+      <li><a href="#agenda">Agenda</a></li>
+      <li><a href="#notes">Notes</a></li>
+      <li><a href="#reminders">Reminders</a></li>
+    </ol>
+  </nav>
 
-    <nav>
-        <ol>
-            <li><a href="#attendance">Attendance</a></li>
-            <li><a href="#agenda">Agenda</a></li>
-            <li><a href="#notes">Notes</a></li>
-            <li><a href="#reminders">Reminders</a></li>
-        </ol>
-    </nav>
+  <main>
+    <section id="attendance">
+      <h2>Attendance</h2>
+      <details>
+        <summary><strong>Present</strong></summary>
+        <div>Yuva, Dakota, Aarav, Luna, Praneeth, Minjoo</div>
+      </details>
+      <details>
+        <summary><strong>Absent</strong></summary>
+        <div>Jonathan (<i>excused</i>), Blase, Reva</div>
+      </details>
+    </section>
 
-    <main>
-        <section id="attendance">
-            <h2>Attendance</h2>
+    <section id="agenda">
+      <h2>Agenda</h2>
+      <ul>
+        <li>Review of things accomplished in Winter quarter</li>
+        <li>Next Steps</li>
+        <li>Task Assignment</li>
+      </ul>
+    </section>
 
-            <details>
-                <summary><strong>Present</strong></summary>
-                <div>Yuva, Dakota, Aarav, Luna, Praneeth, Minjoo</div>
-            </details>
+    <section id="notes">
+      <h2>Notes</h2>
 
-            <details>
-                <summary><b>Absent</b></summary>
-                <span>Jonathan (<b><i>excused</i></b>), Blase, Reva</span>
-            </details>
+      <h3>Winter Review</h3>
+      <ul>
+        <li>
+          Last quarter, we <em>completed</em> the design of our software framework, and implemented the classes we will be using.
+          <ul>
+            <li>Is this structure final?</li>
+            <li>Does the software team understand the serial handling files?</li>
+          </ul>
+        </li>
+        <li>
+          Conducted research on, and finalized all parts to be used for electronics.
+          <ul>
+            <li>Displays are now in transit.</li>
+            <li>Have we started thinking about our GPIO requirements?</li>
+          </ul>
+        </li>
+        <li>
+          Started a new keycap design, with room for a screen. Initial enclosure design started.
+          <ul>
+            <li>We still need the physical dimensions for the rotary encoders. Caliper measurement pending.</li>
+          </ul>
+        </li>
+      </ul>
 
-        </section>
-        <section id="agenda">
-            <h2>Agenda</h2>
-            <ul>  
-                <li>Review of things accomplished in Winter quarter</li>
-                <li>Next Steps</li>
-                <li>Task Assignment</li>
-            </ul>
-        </section>
-        <section id="notes">
-            <h2>Notes</h2>
+      <h3>Next Steps</h3>
+      <ul>
+        <li>
+          <strong>Software</strong>
+          <ul>
+            <li>
+              <img src="ss1.jpg" height="334" width="800" alt="Current class design" title="Current class design">
+            </li>
+            <li>Review framework and see if any changes are required.</li>
+            <li>Write code for getting an icon for each key. Work with electronics to handle saving on MCU.</li>
+            <li>
+              <img src="ui.jpg" height="500" width="600" alt="Current UI" title="Current UI">
+            </li>
+            <li>Finish up UI design.</li>
+            <li>Integrate existing code with serial port code.
+              <ul>
+                <li>Done today.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
 
-            <h3>Winter Review</h3>
-            <ul>
-                <li>Last quarter, we <em>completed</em> the design of our software framework, and implemented the classes we will be using.</li>
-                    <ul>
-                        <li>Is this structure final?</li>
-                        <li>Does the software team understand the serial handling files?</li>
-                    </ul>
-                <li>Conducted research on, and finalized all parts to be used for electronics.</li>
-                    <ul>
-                        <li>Displays are now in transit.</li>
-                        <li>Have we started thinking about our GPIO requirments?</li>
-                    </ul>
-                <li>Started a new keycap design, with room for a screen. Initial enclosure design started.</li>
-                    <ul>
-                        <li> We still need the physical dimensions for the rotary encoders. Caliper measurement pending.</li>
-                    </ul>
-            </ul>
+        <li>
+          <strong>Electronics</strong>
+          <ul>
+            <li>Design and test display driver circuits.
+              <ul>
+                <li>I did reach out to the company, and they said they could help with designing the circuit.</li>
+                <li>Today, tested one configuration, only B&W works, not color yet.</li>
+              </ul>
+            </li>
+            <li>Design PCB with through hole ZIF connectors.</li>
+            <li>Work on the Key Workshop PCB</li>
+            <li>Demo for Exec Meeting</li>
+            <li>
+              <video controls width="640">
+                <source src="demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </li>
+            <li>
+              <audio controls>
+                <source src="demo-audioextracted.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </li>
+          </ul>
+        </li>
 
-            <h3>Next Steps</h3>
-            
-            <ul>
-                <li><strong>Software</strong></li>
-                    <ul>
-                        <img src="ss1.jpg"
-                            height="334"
-                            width="800" 
-                            alt="Current class design" 
-                            title="Current class design">
-                        <li>Review framework and see if any changes are required.</li>
-                        <li>Write code for getting an icon for each key. Work with electronics to handle saving on MCU.</li>
-                        <img src="ui.jpg"
-                            height="500"
-                            width="600" 
-                            alt="Current UI" 
-                            title="Current UI">
-                        <li>Finish up UI design.</li>
-                        <li>Integrate existing code with serial port code.</li>
-                            <ul>
-                                <li>Done today.</li>
-                            </ul>
-                    </ul>
-                <li><strong>Electronics</strong></li>
-                    <ul>
-                        <li>Design and test display driver circuits.</li>
-                            <ul>
-                                <li> I did reach out to the company, and they saisd they could help with designing the circuit.</li>
-                                <li> Today, tested one configuration, only B&W works, not colour yet.</li>
-                            </ul>
-                        <li>Design PCB with through hole ZIF connectors.</li>
-                        <li>Work on the Key Workshop PCB</li>
-                        <li> Demo for Exec Meeting</li>
-                        <span>
-                            <video controls width="640">
-                            <source src="demo.mp4" type="video/mp4">
+        <li>
+          <strong>Hardware</strong>
+          <ul>
+            <li>Test displays to see if they fit in the keycaps. (Wait for arrival)</li>
+            <li>Work on an initial, smaller enclosure. 2 keys and 1 volume knob.</li>
+          </ul>
+        </li>
+      </ul>
 
-                            <audio controls>
-                            <source src="demo-audioextracted.mp3" type="audio/mpeg">
-                        </span>
-                        
-                        
-                    </ul>
-                <li><strong>Hardware</strong></li>
-                    <ul>
-                        <li>Test displays to see if they fit in the keycaps. (Wait for arrival)</li>
-                        <li>Work on an initial, smaller enclosure. 2 keys and 1 volume knob.</li>
-                    </ul>
-            </ul>
+      <h3>Task Assignments</h3>
+      <ul>
+        <li>Minjoo, Reva: integrate the backend, electronics, and software files.</li>
+        <li>Dakota, Luna: make sure UI is working as intended. fix config file errors</li>
+        <li>Jonathan: work on JPEG transfer and saving</li>
+        <li>Praneeth: work on driving multiple displays</li>
+        <li>Blase: start working on the enclosure CAD</li>
+      </ul>
+    </section>
 
+    <section id="reminders">
+      <h2>Reminders</h2>
+      <ul>
+        <li>Remember to work on the Macro Key Workshop slides before next meeting.</li>
+        <li>Please have 3-D printed demo unit ready for the keycap</li>
+        <li>Please place an order for the <a href="https://www.amazon.com/dp/B0D8S22V7L?ref=ppx_yo2ov_dt_b_fed_asin_title">ESP32</a></li>
+      </ul>
+    </section>
 
-            <h3>Task Assignments</h3>
-            <ul>
-                <li>Minjoo, Reva: integrate the backend, electronics, and software files.</li>
-                <li>Dakota, Luna: make sure UI is working as intended. fix config file errors</li>
-                <li>Jonathan: work on JPEG transfer and saving</li>
-                <li>Praneeth: work on driving multiple displays</li>
-                <li>Blase: start working on the enclosure CAD</li>
-            </ul>
+    <section id="join">
+      <form>
+        <fieldset>
+          <legend>Join the MacroPad HKN Projects Team</legend>
 
-        </section>
-        <section id="reminders">
-            <h2>Reminders</h2>
-            <ul>
-                <li> Remember to work on the Macro Key Workshop slides before next meeting. </li>
-                <li> Please have 3-D printed demo unit ready for the keycap </li>
-                <li> Please place an order for the <a href="https://www.amazon.com/dp/B0D8S22V7L?ref=ppx_yo2ov_dt_b_fed_asin_title">ESP32</a><br></li>
-            </ul>
-        </section>
-    </main>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br><br>
 
-    <footer>
-        <p>© 2025 <strong>Eta Kappa Nu</strong>. All Rights Reserved.</p>
-    </footer>
+          <label for="join-date">Preferred Join Date:</label>
+          <input type="date" id="join-date" name="join-date"><br><br>
 
-  </body>
+          <p>Which sub-team are you most interested in?</p>
+          <input type="radio" id="software" name="team" value="software">
+          <label for="software">Software</label><br>
 
-  <form>
-    <fieldset>
-      <legend>Join the MacroPad HKN Projects Team</legend>
-  
-      <!-- Text Input -->
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <br><br>
-  
-      <!-- Date Input -->
-      <label for="join-date">Preferred Join Date:</label>
-      <input type="date" id="join-date" name="join-date">
-      <br><br>
-  
-      <!-- Radio Buttons -->
-      <p>Which sub-team are you most interested in?</p>
-      <input type="radio" id="software" name="team" value="software">
-      <label for="software">Software</label><br>
-  
-      <input type="radio" id="electronics" name="team" value="electronics">
-      <label for="electronics">Electronics</label><br>
-  
-      <input type="radio" id="design" name="team" value="design">
-      <label for="design">CAD/Design</label>
-      <br><br>
-  
-      <!-- Checkbox -->
-      <input type="checkbox" id="has-experience" name="experience">
-      <label for="has-experience">I have prior experience with microcontrollers or PCBs</label>
-      <br><br>
-  
-      <!-- Textarea -->
-      <label for="goals">What would you like to contribute to the project?</label><br>
-      <textarea id="goals" name="goals" rows="4" cols="40"></textarea>
-      <br><br>
-  
-      <!-- Select Dropdown -->
-      <label for="preferred-role">Preferred Role:</label>
-      <select id="preferred-role" name="preferred-role">
-        <option value="soldering">Soldering</option>
-        <option value="testing">Testing</option>
-        <option value="programming">Programming</option>
-        <option value="documentation">Documentation</option>
-      </select>
-      <br><br>
-  
-      <!-- Datalist -->
-      <label for="fav-mcu">Favorite Microcontroller:</label>
-      <input list="mcus" id="fav-mcu" name="fav-mcu">
-      <datalist id="mcus">
-        <option value="Arduino Uno">
-        <option value="ESP32">
-        <option value="Raspberry Pi Pico">
-        <option value="ATmega328P">
-      </datalist>
-      <br><br>
-  
-      <!-- Submit Button -->
-      <button type="submit">Submit Form</button>
-    </fieldset>
-  </form>
-  
+          <input type="radio" id="electronics" name="team" value="electronics">
+          <label for="electronics">Electronics</label><br>
+
+          <input type="radio" id="design" name="team" value="design">
+          <label for="design">CAD/Design</label><br><br>
+
+          <input type="checkbox" id="has-experience" name="experience">
+          <label for="has-experience">I have prior experience with microcontrollers or PCBs</label><br><br>
+
+          <label for="goals">What would you like to contribute to the project?</label><br>
+          <textarea id="goals" name="goals" rows="4" cols="40"></textarea><br><br>
+
+          <label for="preferred-role">Preferred Role:</label>
+          <select id="preferred-role" name="preferred-role">
+            <option value="soldering">Soldering</option>
+            <option value="testing">Testing</option>
+            <option value="programming">Programming</option>
+            <option value="documentation">Documentation</option>
+          </select><br><br>
+
+          <label for="fav-mcu">Favorite Microcontroller:</label>
+          <input list="mcus" id="fav-mcu" name="fav-mcu">
+          <datalist id="mcus">
+            <option value="Arduino Uno">
+            <option value="ESP32">
+            <option value="Raspberry Pi Pico">
+            <option value="ATmega328P">
+          </datalist><br><br>
+
+          <button type="submit">Submit Form</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 <strong>Eta Kappa Nu</strong>. All Rights Reserved.</p>
+  </footer>
+</body>
 
 </html>
