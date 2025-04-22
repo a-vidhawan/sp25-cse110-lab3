@@ -1,0 +1,22 @@
+/* 1. IMPORT GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* 2. :root VARIABLES & FALLBACKS */
+:root {
+    --primary: #1abc9c;    /* teal / bluish‑green accent */
+    --accent:  #1abc9c;    /* same accent everywhere */
+    --link:    #FFFF00;    /* electric yellow for links */
+    --bg:      black;    /* black background */
+    --text:    rgb(255,255,255);    /* white text */
+}
+
+/* base styles… */
+body {
+    margin: 0;
+    padding: 1rem;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+}
+/* …rest of your external CSS… */
