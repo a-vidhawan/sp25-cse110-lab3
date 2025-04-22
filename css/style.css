@@ -3,8 +3,8 @@
 
 /* 2. :root VARIABLES & FALLBACKS */
 :root {
-    --primary: #1abc9c;    /* teal / bluish‑green accent */
-    --accent:  #1abc9c;    /* same accent everywhere */
+    --primary: color-mix(in srgb, var(--accent) 60%, #00ffff 40%);    /* teal / bluish‑green accent */
+    --accent:  #00ffff;    /* same accent everywhere */
     --link:    #FFFF00;    /* electric yellow for links */
     --bg:      black;    /* black background */
     --text:    rgb(255,255,255);    /* white text */
