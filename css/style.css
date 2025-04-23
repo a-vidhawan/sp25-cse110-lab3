@@ -194,3 +194,36 @@ body {
     color: var(--link);
     text-decoration: overline;
   }
+
+  /* === Issue 6: Flexbox & Grid Layouts === */
+
+.flex-container {
+    display: flex;
+    flex-direction: row;            /* main axis flow */
+    justify-content: space-around;  /* distribute items */
+    align-items: center;            /* cross-axis alignment */
+    gap: 1rem;                      /* spacing between items */
+  }
+  
+  .flex-container > .flex-item {
+    flex: 1 1 100px;                /* grow, shrink, basis */
+    padding: 1rem;
+    background-color: var(--accent);
+    color: greenyellow;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);     /* three equal columns */
+    grid-auto-rows: minmax(100px, auto);       /* row sizing */
+    gap: 1rem;                                 /* grid gap */
+    justify-items: center;                     /* item alignment */
+    align-items: start;
+  }
+  
+  .grid-container > .grid-item {
+    background-color: var(--primary);
+    color: grey;
+    padding: 1rem;
+  }
+  
