@@ -8,6 +8,19 @@
     --link:    #FFFF00;    /* electric yellow for links */
     --bg:      grey;    /* black background */
     --text:    rgb(255,255,255);    /* white text */
+    --tone: hsl(204, 50%, 60%);
+    --highlight: orange;
+
+    --text-color: var(--text, white);
+}
+
+a.mix {
+    color: color-mix(in srgb, var(--primary) 70%, var(--highlight) 30%);
+}
+
+button {
+    background-color: var(--accent);
+    color: var(black);
 }
 
 /* base styles… */
@@ -16,7 +29,7 @@ body {
     padding: 1rem;
     font-family: 'Roboto', Arial, sans-serif;
     background-color: var(--bg);
-    color: var(--text);
+    color: var(--text-color);
     line-height: 1.5;
 }
 /* …rest of your external CSS… */
