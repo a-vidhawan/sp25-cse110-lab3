@@ -181,4 +181,16 @@ body {
     margin: 0.5rem;
     z-index: 1000;
   }
+
   
+  .text-center {
+    text-align: center;
+  }
+  .text-justify {
+    text-align: justify;
+  }
+
+  .hover-demo:hover {
+    color: var(--link);
+    text-decoration: overline;
+  }
