@@ -3,7 +3,8 @@
 
 /* 2. :root VARIABLES & FALLBACKS */
 :root {
-    --primary: color-mix(srgb, var(--accent) 60%, #00ffff 40%);    /* teal / bluish‑green accent */
+    --primary: #00ffff;    /* teal / bluish‑green accent */
+    --primary2: color-mix(in srgb, #00ffff 70%, #ffffff 30%);
     --accent:  #00ffff;    /* same accent everywhere */
     --link:    #FFFF00;    /* electric yellow for links */
     --bg:      grey;    /* black background */
@@ -151,7 +152,7 @@ body {
     max-width: 80%;
     min-width: 100px;
     height: 80px;
-    background: var(--primary);
+    background-color: var(--primary);
     color: var(--text);
     padding: 0.5rem;
     margin-top: 1rem;
@@ -193,7 +194,7 @@ body {
   }
 
   .hover-demo:active {
-    color: var(--primary);
+    color: #00ffff;
     text-decoration: line-through;
     transform: scale(0.98);
   }
@@ -244,7 +245,7 @@ body {
 
 /* 1. Class selector */
 .class-demo {
-    background: var(--primary);
+    background-color: var(--primary);
     color: var(--text);
     padding: 0.5rem;
   }
@@ -321,10 +322,8 @@ body {
   
   /* 10. Nested example (CSS Nesting Module syntax) */
   /* Requires a nesting-aware toolchain */
-  .nest-demo {
-    & .child {
-      background: var(--tone);
+  .nest-demo .child {
+      background-color: var(--tone);
       padding: 0.5rem;
     }
-  }
   
