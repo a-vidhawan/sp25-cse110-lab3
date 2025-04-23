@@ -226,3 +226,14 @@ body {
     color: grey;
     padding: 1rem;
   }
+
+  
+@media(max-width: 768px){
+    img, video {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto; /* center if smaller */
+    }
+  }
+    
