@@ -195,6 +195,12 @@ body {
     text-decoration: overline;
   }
 
+  .hover-demo:active {
+    color: var(--primary);
+    text-decoration: line-through;
+    transform: scale(0.98);
+  }
+
   /* === Issue 6: Flexbox & Grid Layouts === */
 
 .flex-container {
@@ -237,3 +243,91 @@ body {
     }
   }
     
+  /* === Issue 8: Advanced selectors === */
+
+/* 1. Class selector */
+.class-demo {
+    background: var(--primary);
+    color: var(--text);
+    padding: 0.5rem;
+  }
+  
+  /* 2. ID selector */
+  #id-demo {
+    background: var(--accent);
+    color: var(--text);
+    padding: 0.5rem;
+  }
+  
+  /* 3. Universal selector */
+  * {
+    outline: 1px dashed magenta;  /* demo only */
+  }
+  
+  /* 4. Element selector */
+  nav {
+    border-bottom: 2px solid var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  
+  /* 5. Attribute selector */
+  [role="button"] {
+    background: var(--link);
+    color: var(--text);
+    padding: 0.5rem 1rem;
+  }
+  
+  /* 6. Pseudo-class selector */
+  .pseudo-demo:hover {
+    text-decoration: underline;
+  }
+  
+  /* 7. Selector list */
+  h1, h2, h3 {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* 8a. Descendant combinator */
+  .parent .child {
+    border-left: 4px solid var(--primary);
+    padding-left: 0.5rem;
+  }
+  
+  /* 8b. Child combinator */
+  .parent-child > p {
+    border-top: 2px dashed var(--accent);
+    padding-top: 0.5rem;
+  }
+  
+  /* 8c. General sibling */
+  h2 ~ p.general-sibling {
+    font-style: italic;
+  }
+  
+  /* 8d. Adjacent sibling */
+  h2 + ul.adjacent-sibling {
+    border-top: 2px dotted var(--link);
+    padding-top: 0.5rem;
+  }
+  
+  /* 8e. Combining two selectors */
+  p.special {
+    background: var(--highlight);
+    padding: 0.25em;
+  }
+  
+  /* 9. :has() selector */
+  section.has-demo:has(input:invalid) {
+    border: 2px solid crimson;
+    padding: 0.5rem;
+  }
+  
+  /* 10. Nested example (CSS Nesting Module syntax) */
+  /* Requires a nesting-aware toolchain */
+  .nest-demo {
+    & .child {
+      background: var(--tone);
+      padding: 0.5rem;
+    }
+  }
+  
