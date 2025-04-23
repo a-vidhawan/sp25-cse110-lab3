@@ -33,3 +33,92 @@ body {
     line-height: 1.5;
 }
 /* …rest of your external CSS… */
+
+
+/* === Issue 3: Box Model & Borders === */
+
+/* Center any fixed-width container */
+.container {
+  width: 80%;
+  margin-top: 2rem;    /* longhand margin */
+  margin-right: auto;  /* auto-centers horizontally */
+  margin-bottom: 2rem;
+  margin-left: auto;
+}
+
+/* Longhand margin & padding example */
+.box-demo {
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+  
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  background: var(--tone);
+}
+
+/* Shorthand padding & margin */
+.shorthand-demo {
+  margin: 2rem auto;     /* vertical 2rem, auto-horizontal */
+  padding: 1rem 2rem;    /* vertical 1rem, horizontal 2rem */
+  background: var(--highlight);
+  color: black;
+}
+
+/* Border properties */
+.border-demo {
+  padding: 1rem;
+  border-width: 4px;
+  border-style: dashed;
+  border-color: var(--primary);
+  border-radius: 12px;
+  background: var(--bg);
+  color: var(--text-color);
+}
+
+/* === Issue 3: Box Model & Borders === */
+
+/* Center any fixed-width container */
+.container {
+    width: 80%;
+    margin-top: 2rem;    /* longhand margin */
+    margin-right: auto;  /* auto-centers horizontally */
+    margin-bottom: 2rem;
+    margin-left: auto;
+  }
+  
+  /* Longhand margin & padding example */
+  .box-demo {
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    background: var(--tone);
+  }
+  
+  /* Shorthand padding & margin */
+  .shorthand-demo {
+    margin: 2rem auto;     /* vertical 2rem, auto-horizontal */
+    padding: 1rem 2rem;    /* vertical 1rem, horizontal 2rem */
+    background: var(--highlight);
+    color: black;
+  }
+  
+  /* Border properties */
+  .border-demo {
+    padding: 1rem;
+    border-width: 4px;
+    border-style: dashed;
+    border-color: var(--primary);
+    border-radius: 12px;
+    background: var(--bg);
+    color: var(--text-color);
+  }
